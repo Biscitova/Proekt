@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>&#128339;</title>
+        <meta charset='utf-8' />
+        <link rel="stylesheet" href="time_tracker.css">
+        <script src="jquery-2.0.3.js"></script>
+        <script src="time_tracker.js"></script>
+        <script type="text/javascript" src="https://cdn.webix.com/edge/webix.js"></script>
+		<script>
+			const today_date = new Date(2022,03,09);
+		</script>
+    </head>
+    <body>
+        <form id="TaskForm">
+            <input id="Form_TaskName" title="Введите здесь название вашей задачи" type="text" placeholder="Задача/Проект" />
+            <input id="StartTimer" type="hidden" />
+            <button id="AddTaskButton" title="Add task" type="submit"></button>
+            <button id="TrackTimeButton" title="Start new task" type="submit"></button>
+            <button onclick="window.location.href = 'time_tracker.html';" id="TrackTimeButton" title="" type="submit"></button>
+        </form>
+        <div id="TaskList">
+            <div id="top_drop" class="drop_target"></div>
+        </div>
+        <table border="1" onclick="Table">
+            <thead>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+    </body>
+</html>
